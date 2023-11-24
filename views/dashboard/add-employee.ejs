@@ -1,0 +1,70 @@
+<%- include('./header.ejs')%>
+
+<section>
+<div class="container-fluid">
+    <div class="row">
+
+    
+        <div class="col-sm-12 col-md-3 col-lg-2 p-0">
+            <%- include('./left.ejs')%>
+        </div>
+
+        <div class="col-sm-12 col-md-9 col-lg-10 pt-5 mt-5" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            
+            <h1 class="mb-3"><b>Add Details</b></h1>
+            <p>Fill out this form</p>
+            
+                <form method="post" class="text-white" action="/employee">
+
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="name" name="fname" placeholder="Employees Name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Employee mail</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="email" name="employeeid" placeholder="Employees ID">
+                            </td>
+                        </tr>
+
+                        
+
+                        <tr>
+                            <td>Phone No.</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="number" name="number" placeholder="Mobile No.">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Address</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="text" name="address" placeholder="Employeer Address">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Designation</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="text" name="designation" placeholder="Employeer Designation">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="btn btn-lg" type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+            
+            
+        </div>
+
+    </div>
+</div>
+</section>

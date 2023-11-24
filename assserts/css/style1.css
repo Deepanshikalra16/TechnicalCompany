@@ -1,0 +1,100 @@
+.left{
+    background-color: #081937;
+    height: 95vh;
+}a{
+    color: white;
+    font-size: 20px;
+    font-family: Metropolis-face;
+}
+
+.left h2{
+    color: #fff;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.main h1{
+    font-size: 70px;
+    font-family: Bitter-bold;
+    color: #071738;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #28498d;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    
+}
+form input{
+    margin: 10px 0;
+    font-size: 19px;
+}
+.dash_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoutModal{
+    border: 1px solid black;
+    display: none;
+}
+
+
+
+/* New one */
+/* .left_dash{
+   
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    
+}
+
+.left_dash ul li{
+    list-style: none;
+    padding: 20px 0;
+    font-family: Metropolis-face;
+    
+}
+
+.off-canvas{
+    height: 95vh;
+    background-color: #071738;
+}
+
+.dash_content{
+    background-color: #071738;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #071738;
+    color: #fff;
+}
+
+.card-body ul li{
+    list-style: none;
+    padding: 8px;
+}
+.card-body img{
+    width: 100%;
+    height: 320px;
+}
+.table tr th{
+    background-color: #071738;
+    color: #fff;
+}
+.table tr td{
+    background-color: #071738;
+    color: #fff;
+} */

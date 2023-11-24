@@ -1,0 +1,52 @@
+<%- include('./header.ejs')%>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+
+            <div class="col-sm-12 col-md-3 col-lg-2 p-0">
+                <%- include('./left.ejs')%>
+            </div>
+
+
+        <div class="col-sm-12 col-md-9 col-lg-10 dash_">
+            <% if(employeedata.length>0) {%>
+            <table class="table border">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Employee Id</th>
+                    <th scope="col">Employee Number</th>
+                    <th scope="col">Employee Address</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Delete</th>
+                    <th scope="col">Edit</th>
+                </tr>
+                <% for(var i=0; i<employeedata.length; i++){ %>
+                <tr>
+                    <th><%= i%></th>
+                    <td><%= employeedata[i].fname %></td>
+                    <td><%= employeedata[i].employeeid%></td>
+                    <td><%= employeedata[i].number %></td>
+                    <td><%= employeedata[i].address %></td>
+                    <td><%= employeedata[i].designation %></td>
+                    <td>
+                        <a href="/delete1/<%= employeedata[i]._id %>">
+                        <button class="btn text-info" type="submit">Delete</button></a>
+                    </td>
+                    <td><button class="btn text-danger" type="submit">Edit</button></td>
+                    <td></td>
+                </tr>
+                <% } %>
+
+                
+            </table>
+<%} else {%>
+    No record Found
+    <%}%>
+            
+
+        </div>
+    </div>
+</div>

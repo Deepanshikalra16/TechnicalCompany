@@ -1,0 +1,62 @@
+<%- include('./common/header.ejs')%>
+
+<section>
+<div class="container-fluid">
+    <div class="row">
+
+    
+     
+
+        <div class="col-sm-12 col-md-9 col-lg-10 pt-5 mt-5" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            
+            <h1 class="mb-3"><b>Add Details</b></h1>
+            <p>Fill out this form</p>
+            
+                <form method="post" class="text-white" action="/sign-up">
+
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="text" name="fname" placeholder="name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Email</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="email" name="email" placeholder="Enter your email">
+                            </td>
+                        </tr>
+
+                        
+
+                        <tr>
+                            <td>Password</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="password" name="password" placeholder="Password">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>phone no.</td>
+                            <td>
+                                <input class="py-2 px-3 mx-3" type="text" name="phone" placeholder="Mobile no">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="btn btn-lg bg-dark" type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+            
+            
+        </div>
+
+    </div>
+</div>
+</section>

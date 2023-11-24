@@ -1,0 +1,420 @@
+@font-face {
+    font-family: Metropolis-face;
+    src: url(/assserts/fonts/Metropolis-Medium.otf);
+    
+}
+@font-face {
+    font-family: Bitter-bold;
+    src: url(/assserts/fonts/static/Bitter-Bold.ttf);
+}
+@font-face {
+    font-family: Metropolis-Light;
+    src: url(/assserts/fonts/Metropolis-Light.otf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* .gg{
+    border: 1px solid red;
+} */
+.navbar{
+    background-image: linear-gradient(to left,#081937,#112e67)
+}
+.navbar-brand{
+    font-size: 35px;
+}
+.nav-link{
+    font-family: Metropolis-face;
+    color: #fff;
+}
+.btn{
+    border: 1px solid #246af3;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #081937;
+    color: white;
+    border: 1px solid #fff;
+}
+.banner{
+    background-image: linear-gradient(to left,#081937,#112e67);
+    min-height: 60vh;
+    display: flex;
+    place-content: center;
+    padding-left: 270px;
+    color: #fff;
+}
+.banner h1{
+    font-size: 50px;
+    font-family: Bitter-bold;
+}
+.serv_type{
+    box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    
+}
+.serv_type:hover{
+    border: 1.5px solid #112e67;
+    
+}
+.heading{
+    letter-spacing: 2px; 
+    color: #4075cf;
+    font-weight: 700;
+}
+.solution p{
+    font-family:Metropolis-Light;
+    color: rgb(98, 99, 103);
+}
+.career_sect{
+    background-color: #081937f5;
+    color: #fff;
+    text-align: center;
+}
+.career_sect_card:hover{
+    background-image: linear-gradient(to left,#1b448b,#5a6886);
+    color: #fff;
+}
+.card-body span{
+    border:1px solid #081937;
+    border-radius: 20px;
+}
+.career_sect_card:hover span{
+    background-image: linear-gradient(to left,#081937,#112e67);
+    color: white;
+    border: 1px solid #fff;
+}
+.card-body a{
+    color: #081937;
+
+}a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.card-body a i{
+    visibility: hidden;
+    color: #fff;
+}
+.career_sect_card:hover #See-more{
+    font-size: 22px;
+    transition: 0.4s;
+    
+}
+.card:hover #See-more{
+    color: #fff;
+}
+.career_sect_card:hover #ic1{
+  visibility: visible;
+  transition: 0.2s ease-in;
+}
+
+.line{
+    
+    width: 130px;
+    height: 4px;
+    background-color: #5057a7;
+    border-radius: 12px;
+}
+.network_img{
+    width: 150px;
+    height: 150px;
+}
+.line1{
+    width: 0.01px;
+    height: 90px;
+    border-color: grey;
+    border-style:dotted;
+}
+
+
+.banner1{
+    background-image: linear-gradient(to left,rgba(12, 12, 80, 0.8), rgba(10, 29, 85, 0.819)),url(/assserts/images/banner-img3.jpg);
+    background-size: 100% 120vh;
+    max-height: 120vh;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 80px;
+    
+}
+.banner1 h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.line2{
+    width: 0.1px;
+    height: 80px;
+    margin-bottom: 50px;
+    border: 2px solid #246af3;
+    
+}
+.customer-data{
+    display: flex;
+    place-content: center;
+    background-color: #fff;
+    box-shadow: 0 3px 36px 0 rgba(22, 22, 22, 0.1);
+    border: 1px solid black;
+    margin-top: -120px;
+}
+.customer-review-img{
+    height: 100px;
+    width: 100px;
+}
+.Newsletter{
+    margin-top: 150px;
+    text-align: center;
+    background-color: #246af3;
+    color: #fff;
+}
+.Newsletter input{
+    border-radius: 12px;
+    font-size: 20px;
+}
+.Newsletter button{
+    background-color: #246af3;
+    color: #fff;
+    border-radius: 12px;
+    position: relative;
+    right: 112px;
+}
+
+.animate__animated .animate__fadeInLeft{
+    --animate-duration: 2s;
+    
+}
+
+/* about page */
+.about{
+    margin-top: 140px;
+    padding-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+}
+.about h1{
+    margin-top: 120px;
+    font-size: 60px;
+    font-family: Bitter-bold;
+    
+}
+.about img{
+    margin-left: -290px;
+}
+
+.client-sect{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+}
+.client-sect img{
+    margin-left: 250px;
+    padding: 25px;
+}
+.functionality{
+   padding: 67px 0;
+}
+.functionality img{
+    margin-left: -110px;
+}
+
+
+
+
+/* Services page */
+.menu{
+    padding-top: 120px;
+}
+.serv-f1 h1{
+    font-size: 45px;
+    padding: 10px 0;
+}
+.service-card{
+    background-color: #4d669172;
+    color: white;
+    line-height: 2;
+}
+.service-card img{
+    height: 80px;
+    width: 80px;
+}
+.why_techno{
+    padding-top: 30px;
+}
+.contact{
+    border: 1px solid #081937;
+    background-color: #174ca9;
+}
+.contact:hover{
+    background-image: linear-gradient(to left,#1b448b,#384c78);
+}
+.menu h1{
+    font-size: 50px;
+    font-family: Bitter-bold;
+}
+
+.contact-details{
+    text-align: left;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+}
+.contact-details img{
+    width: 100px;
+    height: 80px; 
+}
+
+.Request{
+    background-color: rgb(219, 65, 22);
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+/* #################################################################### */
+/* react dev */
+.react-content{
+    margin: 7% 0;
+}
+.react-content h1{
+    font-family: Bitter-bold;
+    /* font-size: 40px; */
+    padding-top: 60px;
+}
+.react-content p{
+    margin-top: 28px;
+    font-family: Metropolis-light;
+}
+.react-content img{
+    width: 350px;
+}
+.map-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-app img{
+    border-radius: 25%;
+}
+
+
+
+
+
+
+@media (max-width:576px) {
+.banner{
+    padding-left: 0px;
+}
+.banner h1{
+    font-size: 30px;   
+}
+.banner1 h1{
+    margin-top: 10px;
+    font-size: 24px;
+}
+.banner1 p{
+    font-size: 13px;
+}
+.line2{
+    height: 60px;
+}
+.Newsletter{
+    display: none;
+    
+}
+#team{
+    display: none;
+}
+.about{
+    margin-top: 0px;
+    padding-left: 0px;
+    
+}
+.about h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.about img{
+    margin-left: 0;
+}
+.client-sect{
+    padding-top: 10px;
+    padding-right: 0;
+    text-align: center;
+}
+.client-sect img{
+    margin-left: 0px;
+    padding: 20px;
+}
+.functionality{
+    padding: 0;
+    
+}
+.functionality img{
+    margin-left: 0px;
+    padding: 0px;
+}
+.contact-details{
+    text-align: center;
+}
+}
+
+
+
+@media (min-width:577px) and (max-width:768px){
+.banner{
+    padding-left: 20px;
+}
+.banner h1{
+    font-size: 40px;  
+}
+.banner1 h1{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.banner1 p{
+    font-size: 15px;
+}
+.about{
+    margin-top: 0px;
+    padding-left: 0px;
+    
+}
+.about h1{
+    font-size: 40px;
+    text-align: center;
+}
+.about img{
+    margin-left: 0;
+    padding: 50px;
+}
+.client-sect{
+    padding-top: 10px;
+    padding-right: 0;
+    text-align: center;
+}
+.client-sect img{
+    margin-left: 0px;
+    padding: 70px;
+}
+.functionality{
+    padding-bottom: 0;
+}
+.functionality img{
+    margin-left: 0px;
+    padding: 30px;
+}
+.why_techno{
+    padding-top: 0px;
+}
+.contact-details{
+    text-align: center;
+}
+}
+
+

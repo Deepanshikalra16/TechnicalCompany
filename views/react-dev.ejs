@@ -1,0 +1,75 @@
+<%- include('./common/header.ejs')%>
+<section>
+    <div class="container bg-white">
+        <div class="row pt-5 react-content">
+            <div class="col-sm-12 col-md-12 col-lg-7 px-3">
+              <h1>Getting started with the react developer</h1>
+              <p class="fs-5">
+                The JavaScript library React is a popular tool to build interactive front end applications. Using the library, can deploy new React projects to any static hosting provider. This is great for performance
+                and security, but also has a limitation: content often must be hardcoded in the application. To edit and update text or images, developers have to make code changes and redeploy the entire application.
+                Luckily, React handles API data very well. To make content editable, you can bring in an API-driven content management system (CMS) like Contentful. Contentful's content platform is an excellent choice
+                to untangle content and code to offer content creators ways to edit data without the need for a source code deploy.This guide to getting started with React explains how to connect a create-react-app
+                application with Contentful's GraphQL API.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5 px-5" style="display: flex;justify-content: center;align-items: center;background-color: #081937;">
+                <img src="/assserts/images/React-icon.png" class="animate__animated animate__rotateIn">
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <img src="/assserts/images/SAP.jpg" class="img-fluid" style="border-radius: 25%;">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-7 px-5">
+                <h1>Single page Application</h1>
+                <p class="fs-5">In contrast to traditional web applications, single-page applications (SPAs) only need to update the currently shown page in order to respond to user, eliminating the need to repeatedly load pages from the server. This approach avoids interrupting the user experience between successive pages, making the application behave more like a desktop application. All necessary code, such as HTML, JavaScript, and CSS, is retrieved with a single page load in a SPA. The appropriate resources are dynamically loaded and added to the page as necessary while allowing navigation via link clicks or other interactive elements without requiring full reloads of content.</p>
+            </div>
+
+        </div>
+
+        <div class="row py-5 my-4">
+           
+            <div class="col-sm-12 col-md-12 col-lg-7 px-4">
+                <h1>Multiple page Application</h1>
+                <p class="fs-5">A multi-page application (MPA) is a type of traditional web application that consists of several pages with its own URL and loads independently from the server when accessed. They are good if you make an online store, catalog website or a commercial website with several features over multiple pages.Users can request an HTML page rendered in their browser by clicking a link or typing a URL into the address bar, which the server processes. Since the server is responsible for creating and delivering the HTML page whenever a new page is loaded, the server must make a new request to the client.User interactions in typical multi page applications lead to page reloads, which can impede user flow and cause delays. This is because the entire page, including all static assets like images, stylesheets, and scripts, must be reloaded from the server.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5 map-app">
+                <img src="/assserts/images/map.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+ 
+      <div class="row">
+        <% if(product.length>0) { %>
+        <% for(var i=0; i<product.length; i++){%>
+        <div class="col-4">
+
+        
+            <div class="card"> 
+             <div class="card-img">
+              <img src="/<%= product[i].image %>" class="img-fluid">
+              
+              </div>
+              <div class="card-body">
+
+                <%= product[i].productname %>
+                <%= product[i].description %>
+              </div>
+             </div>
+           
+
+        </div>
+
+        <% } %>
+
+              <% } else{ %>
+          No Record Found
+      <% } %>
+        
+      </div>
+           
+    </div>
+</section>
