@@ -97,6 +97,7 @@
     "validate-npm-package-license": "^3.0.4"
   },
   "scripts": {
+    "start": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
